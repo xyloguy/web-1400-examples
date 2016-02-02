@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS Specificity</title>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="specificity.js"></script>
+  <script type="text/javascript" src="load.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="mainHide">The calculator is only available on larger screens.</div>
+<div id="main">
+    <a href="#" class="sort button">Sort by specificity</a>
+    <div id="items" class="items" style="margin:0px auto;">
+        <div class="item is-small transition-all">
+            <textarea class="input">ul#nav li.active a</textarea>
+            <div class="selector"><span class="type-c">ul</span><span class="type-a">#nav</span> <span class="type-c">li</span><span class="type-b">.active</span> <span class="type-c">a</span></div>
+            <div class="specificity">
+                <span class="type-z">0</span>
+                <span class="type-a">1</span>
+                <span class="type-b">1</span>
+                <span class="type-c">3</span>
+            </div>
+            <div class="legend">
+                <span class="type-z">Inline styles</span>
+                <span class="type-a">IDs</span>
+                <span class="type-b">Classes, attributes and pseudo-classes</span>
+                <span class="type-c">Elements and pseudo-elements</span>
+            </div>
+            <a href="#" class="duplicate button">Duplicate</a> <a href="#" class="remove button">- Remove</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
