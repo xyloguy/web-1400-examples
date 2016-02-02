@@ -1,0 +1,35 @@
+body{
+  font-family:courier;
+}
+
+#wrapper{
+  background:#000000;
+  color:#ffffff;
+  width:80%;
+  margin:0px auto;
+  padding:50px;
+  border-radius:10px;
+  color:#84c754;
+}
+
+h1, h2{
+  color:#ffffff;
+  margin:0px;
+}
+
+a{
+  color:#ffff00;
+}
+
+a:hover{
+  color:#ffffff;
+}
+
+li{
+  padding:2px;
+  cursor:pointer;
+}
+
+li:hover{
+  color:#ffffff;
+}

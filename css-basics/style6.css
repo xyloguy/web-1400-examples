@@ -1,0 +1,40 @@
+body{
+  font-family:helvetica, arial, sans-serif;
+  color:#444;
+}
+
+h1, h2{
+  color:#222;
+  margin:5px;
+}
+
+h1{
+  font-size:2.8em;
+}
+
+a{
+  color:#444;
+}
+
+a:hover{
+  color:#ba1c21;
+}
+
+li{
+  padding:2px;
+  cursor:pointer;
+  text-decoration: underline;
+}
+
+li:hover{
+  color:#ba1c21;
+}
+
+p, footer{
+  padding-left: 10px;
+}
+
+footer{
+  font-size:0.8em;
+  padding-top:10px;
+}
