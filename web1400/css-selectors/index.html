@@ -721,12 +721,12 @@ pre {
   position: relative;
   border-color: #4078c0;
 }
-</style><title>index</title></head><body><article class="markdown-body"><h1>
+</style><title>index</title></head><body><article class="markdown-body"><h1 id="css-selectors">
 <a id="user-content-css-selectors" class="anchor" href="#css-selectors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CSS Selectors</h1>
 
 <hr>
 
-<h2>
+<h2 id="introbackground">
 <a id="user-content-introbackground" class="anchor" href="#introbackground" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Intro/Background</h2>
 
 <p>A lot has changed over the past several years with CSS.  We are no longer constrained to use <code>id</code>, <code>class</code>, and <code>tag</code> selectors.  This article covers several selectors which are specific to CSS3 and only available in newer broswers. This will not be an issue however because every few struggle (ie. really that's about it, maybe Opera).</p>
@@ -735,7 +735,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="do-nots">
 <a id="user-content-do-nots" class="anchor" href="#do-nots" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DO NOTS</h2>
 
 <p>We first want to emphasize the importance of never using the <code>*</code> or wildcard selector in your css.  Many libraries use this to "reset" or clear the margins and padding of every tag.  This can overload the browser and is really unnessesary.  <strong>JUST DON'T DO IT!!!</strong></p>
@@ -755,7 +755,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="x----tags">
 <a id="user-content-x----tags" class="anchor" href="#x----tags" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>X -- tags</h2>
 
 <p>If you need to select all elements on the page based on their tag rather than <code>id</code> or a <code>class</code> name, you should consider using a tag selector.</p>
@@ -767,7 +767,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="x----id">
 <a id="user-content-x----id" class="anchor" href="#x----id" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>#X -- id</h2>
 
 <p>Using the hash <code>#</code> symbol allows us to target elements by the <code>id</code> attribute. This is one of the most common uses in CSS, you should always be cautious when using <code>id</code> selectors. They are rigid, hard to override, and can only be used once.  Hopefully after going through this article you will be able to identify other selectors you can use instead of <code>#</code> or <code>id</code> selectors.</p>
@@ -783,7 +783,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="x----class">
 <a id="user-content-x----class" class="anchor" href="#x----class" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>.X -- class</h2>
 
 <p>When you use the <code>.</code> it allows you to access <code>class</code> attributes in your html. The biggest difference between <code>id</code>s and <code>class</code>es is you can reuse a <code>class</code> many times on a single page; while an <code>id</code> can only be used once.</p>
@@ -803,7 +803,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="x-y----descendants">
 <a id="user-content-x-y----descendants" class="anchor" href="#x-y----descendants" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>X Y -- descendants</h2>
 
 <p>Descendant selectors are used when you need to be more specific with your selectors. For example, what if you only want/need to target link (anchor <code>a</code>) tags that are nested inside an unordered list? The answer is to use a descendant selector like the following</p>
@@ -819,7 +819,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="xlink-and-xvisited">
 <a id="user-content-xlink-and-xvisited" class="anchor" href="#xlink-and-xvisited" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>X:link and X:visited</h2>
 
 <p>These pseudo-classes are used to style the states of links. <code>:link</code> is used to style links that have not been visited yet, while <code>:visited</code> is used to style links that have been visited on the page.</p>
@@ -838,7 +838,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="xhover----other-pseudo-classes">
 <a id="user-content-xhover----other-pseudo-classes" class="anchor" href="#xhover----other-pseudo-classes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>X:hover -- other pseudo-classes</h2>
 
 <p><code>:hover</code>, <code>:focus</code>, and <code>:active</code> pseudo-class selectors are "user action pseudo-classes." They can be used for pretty much any element that might be feasible to have a user interaction.  Some examples might be links, buttons, and form elements.</p>
@@ -859,7 +859,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="x--y---adjacent">
 <a id="user-content-x--y---adjacent" class="anchor" href="#x--y---adjacent" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>X + Y - adjacent</h2>
 
 <p>Adjacent selectors will select only the element that is immediately preceded by the former element.</p>
@@ -880,7 +880,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="x-gt-y---direct-children">
 <a id="user-content-x--y---direct-children" class="anchor" href="#x--y---direct-children" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>X &gt; Y - direct children</h2>
 
 <p>The difference between the standard <code>X Y</code> descendants and the <code>X &gt; Y</code> is that the latter will only select direct children, or childern only one level below.</p>
@@ -906,7 +906,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="x--y---sibling-combinator">
 <a id="user-content-x--y---sibling-combinator" class="anchor" href="#x--y---sibling-combinator" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>X ~ Y - sibling combinator</h2>
 
 <p>This selector is similar to the <code>X + Y</code> selector. While <code>ul + p</code> will only select a paragraph that immediately follows a <code>ul</code>, using <code>ul ~ p</code> will select all paragraphs as long as they follow a <code>ul</code></p>
@@ -919,7 +919,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="xtitle---attributes-selector">
 <a id="user-content-xtitle---attributes-selector" class="anchor" href="#xtitle---attributes-selector" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>X[title] - attributes selector</h2>
 
 <div class="highlight highlight-source-css"><pre><span class="pl-ent">a</span>[<span class="pl-ent">title</span>]{
@@ -935,7 +935,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="xattributevalue">
 <a id="user-content-xattributevalue" class="anchor" href="#xattributevalue" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>X[attribute="value"]</h2>
 
 <p>This is a more advanced selector attribute. Note that the value is wrapped in quotes. You can use single or double quotes for this.</p>
@@ -957,7 +957,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="xhrefyoutube">
 <a id="user-content-xhrefyoutube" class="anchor" href="#xhrefyoutube" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>X[href*="youtube"]</h2>
 
 <p>Similar to the selector above, in this example the <code>*</code> mean the text should must appear <em>somewhere</em> in the attribute's value.  In this case links containing <em>youtube.com</em>, <em><a href="http://www.youtube.com">www.youtube.com</a></em>, <em>youtube.co</em>, and <em>m.youtube.com</em> will all be selected.</p>
@@ -970,7 +970,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="xhrefhttp">
 <a id="user-content-xhrefhttp" class="anchor" href="#xhrefhttp" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>X[href^="http"]</h2>
 
 <div class="highlight highlight-source-css"><pre><span class="pl-ent">a</span>[href^="http"]{
@@ -986,7 +986,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="xhrefjpg">
 <a id="user-content-xhrefjpg" class="anchor" href="#xhrefjpg" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>X[href$=".jpg"]</h2>
 
 <div class="highlight highlight-source-css"><pre><span class="pl-ent">a</span>[href$="<span class="pl-e">.jpg</span>"]{
@@ -1002,7 +1002,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="xfoobar">
 <a id="user-content-xfoobar" class="anchor" href="#xfoobar" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>X[foo~="bar"]</h2>
 
 <p>Not very many people are familiar with this selector. The tilda <code>~</code> symbol allows us to target attributes which have a space-separated list of values.</p>
@@ -1020,7 +1020,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="xchecked">
 <a id="user-content-xchecked" class="anchor" href="#xchecked" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>X:checked</h2>
 
 <div class="highlight highlight-source-css"><pre><span class="pl-ent">input</span>[type="radio"]<span class="pl-e">:checked</span>{
@@ -1033,7 +1033,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="xbefore-and-xafter">
 <a id="user-content-xbefore-and-xafter" class="anchor" href="#xbefore-and-xafter" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>X:before and X:after</h2>
 
 <p>The <code>:before</code> and <code>:after</code> pseudo class are amazing. People are finding new ways to implement them. It is how the very popular <code>.clearfix</code> hack is implemented.</p>
@@ -1053,7 +1053,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="xnotselector---negation">
 <a id="user-content-xnotselector---negation" class="anchor" href="#xnotselector---negation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>X:not(selector) - negation</h2>
 
 <pre><code>#content &gt; div:not(.clearfix){
@@ -1069,7 +1069,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="xnth-childn">
 <a id="user-content-xnth-childn" class="anchor" href="#xnth-childn" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>X:nth-child(n)</h2>
 
 <p>Used to target specific elements in a stack. <code>nth-child</code> recieves an integer as a parameter, but is NOT <code>zero-based</code>. If you want to target the second item in a list, use <code>li:nth-child(2)</code>.</p>
@@ -1087,7 +1087,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="xnth-last-childn">
 <a id="user-content-xnth-last-childn" class="anchor" href="#xnth-last-childn" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>X:nth-last-child(n)</h2>
 
 <p>Similar to the previous selector <code>nth-child</code> but counts from the end of the stack instead of the start.</p>
@@ -1100,7 +1100,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="xnth-of-typen">
 <a id="user-content-xnth-of-typen" class="anchor" href="#xnth-of-typen" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>X:nth-of-type(n)</h2>
 
 <div class="highlight highlight-source-css"><pre><span class="pl-ent">ul</span><span class="pl-e">:nth-of-type</span>(<span class="pl-c1">3</span>){
@@ -1113,7 +1113,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="xnth-last-of-typen">
 <a id="user-content-xnth-last-of-typen" class="anchor" href="#xnth-last-of-typen" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>X:nth-last-of-type(n)</h2>
 
 <div class="highlight highlight-source-css"><pre><span class="pl-ent">ul</span><span class="pl-e">:nth-last-of-type</span>(<span class="pl-c1">3</span>){
@@ -1126,7 +1126,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="xfirst-child">
 <a id="user-content-xfirst-child" class="anchor" href="#xfirst-child" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>X:first-child</h2>
 
 <div class="highlight highlight-source-css"><pre><span class="pl-ent">ul</span> <span class="pl-ent">li</span><span class="pl-e">:first-child</span>{
@@ -1139,7 +1139,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="xlast-child">
 <a id="user-content-xlast-child" class="anchor" href="#xlast-child" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>X:last-child</h2>
 
 <div class="highlight highlight-source-css"><pre><span class="pl-ent">ul</span> <span class="pl-ent">li</span><span class="pl-e">:last-child</span>{
@@ -1152,7 +1152,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="xonly-child">
 <a id="user-content-xonly-child" class="anchor" href="#xonly-child" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>X:only-child</h2>
 
 <div class="highlight highlight-source-css"><pre><span class="pl-ent">div</span> <span class="pl-ent">p</span>:only-child{
@@ -1171,7 +1171,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="xonly-of-type">
 <a id="user-content-xonly-of-type" class="anchor" href="#xonly-of-type" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>X:only-of-type</h2>
 
 <div class="highlight highlight-source-css"><pre><span class="pl-ent">ul</span> &gt; <span class="pl-ent">li</span><span class="pl-e">:only-of-type</span>{
@@ -1192,7 +1192,7 @@ pre {
 
 <hr>
 
-<h2>
+<h2 id="xfirst-of-type">
 <a id="user-content-xfirst-of-type" class="anchor" href="#xfirst-of-type" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>X:first-of-type</h2>
 
 <p>Used to select the first siblings of its type.</p>
