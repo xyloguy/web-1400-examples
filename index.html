@@ -1,726 +1,359 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><style>@font-face {
-  font-family: octicons-anchor;
-  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    width: 980px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-body .markdown-body {
-    padding: 45px;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    word-wrap: break-word;
-}
-
-pre {
-    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
-}
-
-.markdown-body {
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-  color: #333;
-  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.6;
-  word-wrap: break-word;
-}
-
-.markdown-body a {
-  background-color: transparent;
-}
-
-.markdown-body a:active,
-.markdown-body a:hover {
-  outline: 0;
-}
-
-.markdown-body strong {
-  font-weight: bold;
-}
-
-.markdown-body h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-.markdown-body img {
-  border: 0;
-}
-
-.markdown-body hr {
-  box-sizing: content-box;
-  height: 0;
-}
-
-.markdown-body pre {
-  overflow: auto;
-}
-
-.markdown-body code,
-.markdown-body kbd,
-.markdown-body pre {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
-.markdown-body input {
-  color: inherit;
-  font: inherit;
-  margin: 0;
-}
-
-.markdown-body html input[disabled] {
-  cursor: default;
-}
-
-.markdown-body input {
-  line-height: normal;
-}
-
-.markdown-body input[type="checkbox"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-.markdown-body table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.markdown-body td,
-.markdown-body th {
-  padding: 0;
-}
-
-.markdown-body input {
-  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
-.markdown-body a {
-  color: #4078c0;
-  text-decoration: none;
-}
-
-.markdown-body a:hover,
-.markdown-body a:active {
-  text-decoration: underline;
-}
-
-.markdown-body hr {
-  height: 0;
-  margin: 15px 0;
-  overflow: hidden;
-  background: transparent;
-  border: 0;
-  border-bottom: 1px solid #ddd;
-}
-
-.markdown-body hr:before {
-  display: table;
-  content: "";
-}
-
-.markdown-body hr:after {
-  display: table;
-  clear: both;
-  content: "";
-}
-
-.markdown-body h1,
-.markdown-body h2,
-.markdown-body h3,
-.markdown-body h4,
-.markdown-body h5,
-.markdown-body h6 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  line-height: 1.1;
-}
-
-.markdown-body h1 {
-  font-size: 30px;
-}
-
-.markdown-body h2 {
-  font-size: 21px;
-}
-
-.markdown-body h3 {
-  font-size: 16px;
-}
-
-.markdown-body h4 {
-  font-size: 14px;
-}
-
-.markdown-body h5 {
-  font-size: 12px;
-}
-
-.markdown-body h6 {
-  font-size: 11px;
-}
-
-.markdown-body blockquote {
-  margin: 0;
-}
-
-.markdown-body ul,
-.markdown-body ol {
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.markdown-body ol ol,
-.markdown-body ul ol {
-  list-style-type: lower-roman;
-}
-
-.markdown-body ul ul ol,
-.markdown-body ul ol ol,
-.markdown-body ol ul ol,
-.markdown-body ol ol ol {
-  list-style-type: lower-alpha;
-}
-
-.markdown-body dd {
-  margin-left: 0;
-}
-
-.markdown-body code {
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 12px;
-}
-
-.markdown-body pre {
-  margin-top: 0;
-  margin-bottom: 0;
-  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
-}
-
-.markdown-body .select::-ms-expand {
-  opacity: 0;
-}
-
-.markdown-body .octicon {
-  font: normal normal normal 16px/1 octicons-anchor;
-  display: inline-block;
-  text-decoration: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.markdown-body .octicon-link:before {
-  content: '\f05c';
-}
-
-.markdown-body:before {
-  display: table;
-  content: "";
-}
-
-.markdown-body:after {
-  display: table;
-  clear: both;
-  content: "";
-}
-
-.markdown-body>*:first-child {
-  margin-top: 0 !important;
-}
-
-.markdown-body>*:last-child {
-  margin-bottom: 0 !important;
-}
-
-.markdown-body a:not([href]) {
-  color: inherit;
-  text-decoration: none;
-}
-
-.markdown-body .anchor {
-  display: inline-block;
-  padding-right: 2px;
-  margin-left: -18px;
-}
-
-.markdown-body .anchor:focus {
-  outline: none;
-}
-
-.markdown-body h1,
-.markdown-body h2,
-.markdown-body h3,
-.markdown-body h4,
-.markdown-body h5,
-.markdown-body h6 {
-  margin-top: 1em;
-  margin-bottom: 16px;
-  font-weight: bold;
-  line-height: 1.4;
-}
-
-.markdown-body h1 .octicon-link,
-.markdown-body h2 .octicon-link,
-.markdown-body h3 .octicon-link,
-.markdown-body h4 .octicon-link,
-.markdown-body h5 .octicon-link,
-.markdown-body h6 .octicon-link {
-  color: #000;
-  vertical-align: middle;
-  visibility: hidden;
-}
-
-.markdown-body h1:hover .anchor,
-.markdown-body h2:hover .anchor,
-.markdown-body h3:hover .anchor,
-.markdown-body h4:hover .anchor,
-.markdown-body h5:hover .anchor,
-.markdown-body h6:hover .anchor {
-  text-decoration: none;
-}
-
-.markdown-body h1:hover .anchor .octicon-link,
-.markdown-body h2:hover .anchor .octicon-link,
-.markdown-body h3:hover .anchor .octicon-link,
-.markdown-body h4:hover .anchor .octicon-link,
-.markdown-body h5:hover .anchor .octicon-link,
-.markdown-body h6:hover .anchor .octicon-link {
-  visibility: visible;
-}
-
-.markdown-body h1 {
-  padding-bottom: 0.3em;
-  font-size: 2.25em;
-  line-height: 1.2;
-  border-bottom: 1px solid #eee;
-}
-
-.markdown-body h1 .anchor {
-  line-height: 1;
-}
-
-.markdown-body h2 {
-  padding-bottom: 0.3em;
-  font-size: 1.75em;
-  line-height: 1.225;
-  border-bottom: 1px solid #eee;
-}
-
-.markdown-body h2 .anchor {
-  line-height: 1;
-}
-
-.markdown-body h3 {
-  font-size: 1.5em;
-  line-height: 1.43;
-}
-
-.markdown-body h3 .anchor {
-  line-height: 1.2;
-}
-
-.markdown-body h4 {
-  font-size: 1.25em;
-}
-
-.markdown-body h4 .anchor {
-  line-height: 1.2;
-}
-
-.markdown-body h5 {
-  font-size: 1em;
-}
-
-.markdown-body h5 .anchor {
-  line-height: 1.1;
-}
-
-.markdown-body h6 {
-  font-size: 1em;
-  color: #777;
-}
-
-.markdown-body h6 .anchor {
-  line-height: 1.1;
-}
-
-.markdown-body p,
-.markdown-body blockquote,
-.markdown-body ul,
-.markdown-body ol,
-.markdown-body dl,
-.markdown-body table,
-.markdown-body pre {
-  margin-top: 0;
-  margin-bottom: 16px;
-}
-
-.markdown-body hr {
-  height: 4px;
-  padding: 0;
-  margin: 16px 0;
-  background-color: #e7e7e7;
-  border: 0 none;
-}
-
-.markdown-body ul,
-.markdown-body ol {
-  padding-left: 2em;
-}
-
-.markdown-body ul ul,
-.markdown-body ul ol,
-.markdown-body ol ol,
-.markdown-body ol ul {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.markdown-body li>p {
-  margin-top: 16px;
-}
-
-.markdown-body dl {
-  padding: 0;
-}
-
-.markdown-body dl dt {
-  padding: 0;
-  margin-top: 16px;
-  font-size: 1em;
-  font-style: italic;
-  font-weight: bold;
-}
-
-.markdown-body dl dd {
-  padding: 0 16px;
-  margin-bottom: 16px;
-}
-
-.markdown-body blockquote {
-  padding: 0 15px;
-  color: #777;
-  border-left: 4px solid #ddd;
-}
-
-.markdown-body blockquote>:first-child {
-  margin-top: 0;
-}
-
-.markdown-body blockquote>:last-child {
-  margin-bottom: 0;
-}
-
-.markdown-body table {
-  display: block;
-  width: 100%;
-  overflow: auto;
-  word-break: normal;
-  word-break: keep-all;
-}
-
-.markdown-body table th {
-  font-weight: bold;
-}
-
-.markdown-body table th,
-.markdown-body table td {
-  padding: 6px 13px;
-  border: 1px solid #ddd;
-}
-
-.markdown-body table tr {
-  background-color: #fff;
-  border-top: 1px solid #ccc;
-}
-
-.markdown-body table tr:nth-child(2n) {
-  background-color: #f8f8f8;
-}
-
-.markdown-body img {
-  max-width: 100%;
-  box-sizing: content-box;
-  background-color: #fff;
-}
-
-.markdown-body code {
-  padding: 0;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-  margin: 0;
-  font-size: 85%;
-  background-color: rgba(0,0,0,0.04);
-  border-radius: 3px;
-}
-
-.markdown-body code:before,
-.markdown-body code:after {
-  letter-spacing: -0.2em;
-  content: "\00a0";
-}
-
-.markdown-body pre>code {
-  padding: 0;
-  margin: 0;
-  font-size: 100%;
-  word-break: normal;
-  white-space: pre;
-  background: transparent;
-  border: 0;
-}
-
-.markdown-body .highlight {
-  margin-bottom: 16px;
-}
-
-.markdown-body .highlight pre,
-.markdown-body pre {
-  padding: 16px;
-  overflow: auto;
-  font-size: 85%;
-  line-height: 1.45;
-  background-color: #f7f7f7;
-  border-radius: 3px;
-}
-
-.markdown-body .highlight pre {
-  margin-bottom: 0;
-  word-break: normal;
-}
-
-.markdown-body pre {
-  word-wrap: normal;
-}
-
-.markdown-body pre code {
-  display: inline;
-  max-width: initial;
-  padding: 0;
-  margin: 0;
-  overflow: initial;
-  line-height: inherit;
-  word-wrap: normal;
-  background-color: transparent;
-  border: 0;
-}
-
-.markdown-body pre code:before,
-.markdown-body pre code:after {
-  content: normal;
-}
-
-.markdown-body kbd {
-  display: inline-block;
-  padding: 3px 5px;
-  font-size: 11px;
-  line-height: 10px;
-  color: #555;
-  vertical-align: middle;
-  background-color: #fcfcfc;
-  border: solid 1px #ccc;
-  border-bottom-color: #bbb;
-  border-radius: 3px;
-  box-shadow: inset 0 -1px 0 #bbb;
-}
-
-.markdown-body .pl-c {
-  color: #969896;
-}
-
-.markdown-body .pl-c1,
-.markdown-body .pl-s .pl-v {
-  color: #0086b3;
-}
-
-.markdown-body .pl-e,
-.markdown-body .pl-en {
-  color: #795da3;
-}
-
-.markdown-body .pl-s .pl-s1,
-.markdown-body .pl-smi {
-  color: #333;
-}
-
-.markdown-body .pl-ent {
-  color: #63a35c;
-}
-
-.markdown-body .pl-k {
-  color: #a71d5d;
-}
-
-.markdown-body .pl-pds,
-.markdown-body .pl-s,
-.markdown-body .pl-s .pl-pse .pl-s1,
-.markdown-body .pl-sr,
-.markdown-body .pl-sr .pl-cce,
-.markdown-body .pl-sr .pl-sra,
-.markdown-body .pl-sr .pl-sre {
-  color: #183691;
-}
-
-.markdown-body .pl-v {
-  color: #ed6a43;
-}
-
-.markdown-body .pl-id {
-  color: #b52a1d;
-}
-
-.markdown-body .pl-ii {
-  background-color: #b52a1d;
-  color: #f8f8f8;
-}
-
-.markdown-body .pl-sr .pl-cce {
-  color: #63a35c;
-  font-weight: bold;
-}
-
-.markdown-body .pl-ml {
-  color: #693a17;
-}
-
-.markdown-body .pl-mh,
-.markdown-body .pl-mh .pl-en,
-.markdown-body .pl-ms {
-  color: #1d3e81;
-  font-weight: bold;
-}
-
-.markdown-body .pl-mq {
-  color: #008080;
-}
-
-.markdown-body .pl-mi {
-  color: #333;
-  font-style: italic;
-}
-
-.markdown-body .pl-mb {
-  color: #333;
-  font-weight: bold;
-}
-
-.markdown-body .pl-md {
-  background-color: #ffecec;
-  color: #bd2c00;
-}
-
-.markdown-body .pl-mi1 {
-  background-color: #eaffea;
-  color: #55a532;
-}
-
-.markdown-body .pl-mdr {
-  color: #795da3;
-  font-weight: bold;
-}
-
-.markdown-body .pl-mo {
-  color: #1d3e81;
-}
-
-.markdown-body kbd {
-  display: inline-block;
-  padding: 3px 5px;
-  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  line-height: 10px;
-  color: #555;
-  vertical-align: middle;
-  background-color: #fcfcfc;
-  border: solid 1px #ccc;
-  border-bottom-color: #bbb;
-  border-radius: 3px;
-  box-shadow: inset 0 -1px 0 #bbb;
-}
-
-.markdown-body .plan-price-unit {
-  color: #767676;
-  font-weight: normal;
-}
-
-.markdown-body .task-list-item {
-  list-style-type: none;
-}
-
-.markdown-body .task-list-item+.task-list-item {
-  margin-top: 3px;
-}
-
-.markdown-body .task-list-item input {
-  margin: 0 0.35em 0.25em -1.6em;
-  vertical-align: middle;
-}
-
-.markdown-body .plan-choice {
-  padding: 15px;
-  padding-left: 40px;
-  display: block;
-  border: 1px solid #e0e0e0;
-  position: relative;
-  font-weight: normal;
-  background-color: #fafafa;
-}
-
-.markdown-body .plan-choice.open {
-  background-color: #fff;
-}
-
-.markdown-body .plan-choice.open .plan-choice-seat-breakdown {
-  display: block;
-}
-
-.markdown-body .plan-choice-free {
-  border-radius: 3px 3px 0 0;
-}
-
-.markdown-body .plan-choice-paid {
-  border-radius: 0 0 3px 3px;
-  border-top: 0;
-  margin-bottom: 20px;
-}
-
-.markdown-body .plan-choice-radio {
-  position: absolute;
-  left: 15px;
-  top: 18px;
-}
-
-.markdown-body .plan-choice-exp {
-  color: #999;
-  font-size: 12px;
-  margin-top: 5px;
-}
-
-.markdown-body .plan-choice-seat-breakdown {
-  margin-top: 10px;
-  display: none;
-}
-
-.markdown-body :checked+.radio-label {
-  z-index: 1;
-  position: relative;
-  border-color: #4078c0;
-}
-</style><title>index</title></head><body><article class="markdown-body"><h1 id="hello-world">
-<a id="user-content-hello-world" class="anchor" href="#hello-world" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hello, World</h1>
-</article></body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bryan Poulsen :: Developer, Instructor, &amp; Innovator of Web</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Web Developer, Instructor, and Innovator">
+    <meta name="keywords" content="HTML5,CSS,Web Developer,Web Instructor">
+    <meta name="author" content="Bryan Poulsen">
+
+    <link rel="icon" type="image/png" href="images/favicon1.png">
+    <link rel="shortcut icon" type="image/png" href="images/favicon1.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/resume.css" rel="stylesheet">
+
+    <script src="js/chart.min.js"></script>
+    <script src="js/resume.js"></script>
+    
+    <!--
+    *******************
+    Thanks for taking the time to look at my web resume and seeing how it is
+    designed and delivered.
+
+    In case you are wondering what framework/platforms I am using for my page,
+    I am using pure HTML5, CSS, and JavaScript.
+
+    No frameworks, templates, bootstrap, jQuery, or 960 grid.
+
+    I am using chart.js to generate the donut charts, but have extended its
+    functionality to improve its usability on this page.
+
+    This page is fully responsive, and prints well.
+
+    All designs, css, and javascript are my original work (with exception of chart.js)
+
+    I hope you enjoy it, if you like my resume, or have questions about its design
+    or implementation just let me know.
+
+    Bryan Poulsen
+    four-three-five, seven-seven-three, two-one-three-five
+    bryan [at] bsp [dot] me
+    *******************
+    -->
+  </head>
+  <body>
+    <div>
+      <div id="wrapper">
+        <header>
+          <h1>Bryan Poulsen</h1>
+          <h2>Developer, Instructor, <code class="lower">&amp;amp;</code> Innovator of Web</h2>
+        </header>
+
+        <section>
+          <h3 class="third">About Me</h3>
+
+          <div class="third" id="about">
+            <ul class="info">
+              <li>
+                <span class="key">Cell</span>
+                <span class="value"><a href="tel:4357732135">435.773.2135</a></span>
+              </li>
+
+              <li>
+                <span class="key">Email</span>
+                <span class="value"><a href="mailto:poulsen@dixie.edu">poulsen@dixie.edu</a></span>
+              </li>
+
+              <li>
+                <span class="key">Web</span>
+                <span class="value"><a href="http://bpoulsen.org/">bpoulsen.org</a></span>
+              </li>
+
+              <li>
+                <span class="key">Mail</span>
+                <span class="value">1000 Bluff View Drive<br>Unit 130<br>Washington, UT 84780</span>
+              </li>
+            </ul>
+          </div>
+          <div class="twothirds">I am a dynamic developer and have a broad skill-set with emphasis in Web Development using HTML5, CSS, PHP, MySQL, and JavaScript. I am keen on the most effective means of web content delivery and work to streamline and improve the process and delivery of every project. I am more than a developer. I am also a creative engineer and can accomplish every aspect of a project from conceptualization to the architecture and logic. Others describe my work as &#8220;exceptional.&#8221;</div>
+        </section>
+
+
+        <section id="canvas-holder">
+          <h3 class="third">Skills</h3>
+
+          <div><canvas class="chart-area" data-percent="85" data-skill="Creative Cloud"></canvas></div>
+          <div><canvas class="chart-area" data-percent="100" data-skill="HTML/CSS"></canvas></div>
+          <div><canvas class="chart-area" data-percent="95" data-skill="JavaScript"></canvas></div>
+          <div><canvas class="chart-area" data-percent="85" data-skill="MySQL"></canvas></div>
+          <div><canvas class="chart-area" data-percent="80" data-skill="SYSAD"></canvas></div>
+          <div><canvas class="chart-area" data-percent="90" data-skill="PHP &amp; Python"></canvas></div>
+        </section>
+        
+        <div id="blue">
+          <section id="work">
+            <h3 class="third">Work Experience</h3>
+
+            <div class="half">
+              <h4>Dixie State University <span>12/13&ndash;Present</span></h4>
+              <h5>Math Lab Lead Support Technician</h5>
+            </div>
+
+            <div class="half">
+              <h4>Dixie State University <span>08/14&ndash;Present</span></h4>
+              <h5>Adjunct Instructor of Web</h5>
+            </div>
+
+            <div class="half">
+              <h4>Code Changers <span>06/15&ndash;Present</span></h4>
+              <h5>Lead Web Architect</h5>
+            </div>
+
+            <div class="half">
+              <h4>Poulsen Co, LLC <span>03/10&ndash;Present</span></h4>
+              <h5>Web Developer</h5>
+            </div>
+
+            <div class="half">
+              <h4>Dixie State University <span>03/10&ndash;12/13</span></h4>
+              <h5>Web Developer/Head Lab Assistant</h5>
+            </div>
+
+            <div class="half">
+              <h4>Tonaquint Data Center <span>09/10&ndash;01/11</span></h4>
+              <h5>Network Operations Technician</h5>
+            </div>
+          </section>
+
+          <section id="education">
+            <h3 class="third">Education</h3>
+
+            <div class="half">
+              <h4>University of Denver <span>10/15&ndash;Present</span></h4>
+              <h5>Master&#8217;s of Science</h5>
+              <h6>Information and Communications Technology<br>concentration in Web Design and Development</h6>
+            </div>
+
+            <div class="half">
+              <h4>Dixie State University <span>08/09&ndash;05/14</span></h4>
+              <h5>Bachelor&#8217;s of Science</h5>
+              <h6>Computer and Information Technology<br>emphasis in Visual Technologies</h6>
+            </div>
+          </section>
+
+          <section id="portfolio">
+            <h3 class="third">Portfolio</h3>
+
+            <div><a href="#d1"><img src="images/portfolio/thumbs/cit.jpg" alt="Computer and Information Technology"></a></div>
+            <div><a href="#d2"><img src="images/portfolio/thumbs/dixieschools.jpg" alt="Dixie State Unversity (dixie.edu)"></a></div>
+            <div><a href="#d3"><img src="images/portfolio/thumbs/dixiedepartment.jpg" alt="Dixie State University (business.dixie.edu)"></a></div>
+            <div><a href="#d4"><img src="images/portfolio/thumbs/dixiestudents.jpg" alt="Dixie State University (students.dixie.edu)"></a></div>
+            <div><a href="#d5"><img src="images/portfolio/thumbs/communityeducation.jpg" alt="Community Education"></a></div>
+            <div><a href="#d6"><img src="images/portfolio/thumbs/creativeservices.jpg" alt="Creative Services"></a></div>
+            <div><a href="#d7"><img src="images/portfolio/thumbs/campsinvoice.jpg" alt="Computer Camps"></a></div>
+            <div><a href="#d8"><img src="images/portfolio/thumbs/homeworksubmit.jpg" alt="Homework Submission"></a></div>
+            <div><a href="#d9"><img src="images/portfolio/thumbs/onventure.jpg" alt="Onventure.co"></a></div>
+            <div><a href="#d10"><img src="images/portfolio/thumbs/pianotuner.jpg" alt="Piano Tuner"></a></div>
+            <div><a href="#d11"><img src="images/portfolio/thumbs/christmastreeprogrammer.jpg" alt="Christmas Tree Programmer"></a></div>
+            <div><a href="#d12"><img src="images/portfolio/thumbs/wasatchsavings.jpg" alt="Wasatch Savings"></a></div>
+          </section>
+        </div>
+
+        <section id="references">
+          <h3 class="third">References</h3>
+
+          <div class="third">
+            <h4>Kent Brown</h4>
+            <h5>Business Manager<br>Tuacahn High School</h5>
+            <ul class="info">
+              <li>
+                <span class="key">Email</span>
+                <span class="value">kbrown@tuacahnhs.org</span>
+              </li>
+
+              <li>
+                <span class="key">Phone</span>
+                <span class="value">435.652.3303</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="third">
+            <h4>Lisa Crane</h4>
+            <h5>Educator<br>Hurricane High School</h5>
+            <ul class="info">
+              <li>
+                <span class="key">Email</span>
+                <span class="value">lisa.crane@washk12.org</span>
+              </li>
+
+              <li>
+                <span class="key">Phone</span>
+                <span class="value">435.668.0715</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="third">
+            <h4>Donald Iorio</h4>
+            <h5>Fulfillment &amp; Inventory Manager<br>Florida Market, Amazon.com</h5>
+            <ul class="info">
+              <li>
+                <span class="key">Email</span>
+                <span class="value">iidonald@amazon.com</span>
+              </li>
+
+              <li>
+                <span class="key">Phone</span>
+                <span class="value">803.280.7452</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+
+    <div id="ups">
+      <div id="d1">
+        <img src="images/portfolio/cit.jpg" alt="Computer and Information Technology">
+        <div>
+          <h3>Dixie State CIT</h3>
+
+          <p>I have maintained the Computer and Information Technology website for 5+ years. I has gone through several iterations since that time. It has been nessesary to update the website because of a variety of reasons including: (a) DSU's transition from a four-year college to a university; (b) update to color and branding; and (c) introduction of new DSU logo.</p>
+
+          <p>The current version was designed with a focus on mobile devices. It uses a fluid/responsive design that keeps it compatible with all screen sizes from large desktops to the smallest mobile device. It also has a printer friendly version for students and instructors that want to print out assignments and other information.</p>
+
+          <p>The current version also features a jobs module that queries tech jobs within a 300 mile radius of Dixie State University and a calendar module that uses ajax to load in calendar events from multiple Google calendars and other calendaring sources.</p>
+
+          <p>The CIT website is a flat file system that utilizes markdown and mod-rewrites to perform a bit of magic that allows pages to be rendered as PDFs, slideshows, and many other formats. For fun, the 404 includes an interactive sudoku board instead of a typical meaningless error message.</p>
+        </div>
+      </div>
+      <div id="d2">
+        <img src="images/portfolio/dixieschools.jpg" alt="Dixie State Unversity (dixie.edu)">
+        <div>
+          <h3>Dixie State University</h3>
+
+          <p>After a redesign of cit.dixie.edu a new web group was assembled at DSU. As a member of that group I have played a large role in the redesign, restructure, and implementation of dixie.edu and other department and auxillary pages.</p>
+
+          <p>The new site is built using a wordpress multi-site. I implemented the custom wordpress theme based on designs by Alex Kolody. Through the entire project I have made sure to stick with vanilla wordpress to make updates transition smoothly.</p>
+
+          <p>A few key features of the design include the ability to add a large photo or video header to every page. Custom menus and widgets on every page. I also implemented simple wordpress widgets using APIs I created for the jobs and calendar widgets from the CIT website.</p>
+        </div>
+      </div>
+      <div id="d3">
+        <img src="images/portfolio/dixiedepartment.jpg" alt="Dixie State University (business.dixie.edu)">
+        <div>
+          <h3>DSU Academic Departments</h3>
+
+          <p>This was built as an extension to the dixie.edu wordpress multi-site. Many people expressed the need for a second template for academic departments so it wasn't mistaken for the main dixie.edu webpage. I implemented this wordpress theme as a child theme of the main website. It boasts customizable menus, video headers, and background images that have an automated gaussian blur effect on header images.</p>
+        </div>
+      </div>
+      <div id="d4">
+        <img src="images/portfolio/dixiestudents.jpg" alt="Dixie State University (students.dixie.edu)">
+        <div>
+          <h3>DSU Portals Theme</h3>
+
+          <p>This widget based child theme was designed to manage different portals for the DSU website project. Some of it's features include customizable menus including an extensive "mega menu" at the bottom of the page and 2 quick links with icons to the right of the slider.</p>
+
+          <p>Other features include a customizable slider, blog roll that showcases featured images, and an instagram feed that searches specific hashtags with customized filters. It is very simple for any user to update using simple drag-and-drop wordpress widgets.</p>
+
+        </div>
+      </div>
+      <div id="d5">
+        <img src="images/portfolio/communityeducation.jpg" alt="Community Education">
+        <div>
+          <h3>DSU Community Education</h3>
+
+          <p>I didn't not do the initial build or design of the website but was hired to fix bugs and expand functionality.</p>
+
+          <p>Some features I added include: (a) password protected courses; (b) an easy to use banner/slideshow editor which autosizes and crops uploaded images (pictured); (c) an options page that allows for an easy update of page content; and (d) several bug patches and upgrades.</p>
+        </div>
+      </div>
+      <div id="d6">
+        <img src="images/portfolio/creativeservices.jpg" alt="Creative Services">
+        <div>
+          <h3>DSU Creative Services</h3>
+
+          <p>In an effort to control branding and design of Dixie State University the creative services group was formed. I was then approached and asked to build a system to manage and track all job/design requests. Any marketing materials with the DSU logos or trademarks are required to go through this system before purchasing with pay for the job.</p>
+
+          <p>It features a job level chat and file upload system that emails all parties involved with a particular project and allows the marketing director and CVS internship coordinator to assign jobs to interns so they can track, manage, and make necessary notes and updates on their assigned projects.</p>
+
+          <p>It also includes: (a) form builder to create different job types that can then be added to the dashboard; (b) photo search database that searches image meta data for photos that have been tagged; (c) user management with several levels of permissions, it authenticates using Active Directory and syncs a user's data automatically making placing a job much easier; and (d) job status tracking.</p>
+
+          <p>Additionally, I built the system that preforms custom searches for the photo database, API for querying the database, and the web interface that makes searching for images simple</p>
+        </div>
+      </div>
+      <div id="d7">
+        <img src="images/portfolio/campsinvoice.jpg" alt="Computer Camps">
+        <div>
+          <h3>Computer Camps Registration</h3>
+
+          <p>I designed the registration system used for the DSU Computer Camps. It is a simple AngularJS application and uses a REST API I designed for the site. The system is very simple to use and provides an invoicing system which allows clients to retrieve their invoice and print a copy.</p>
+
+          <p>Using a print-only CSS file provides clients with a clean and easy to read invoice to keep for their records.</p>
+        </div>
+      </div>
+      <div id="d8">
+        <img src="images/portfolio/homeworksubmit.jpg" alt="Homework Submission">
+        <div>
+          <h3>CIT Homework Submission System</h3>
+
+          <p>One night while preparing for finals I got bored and decided to redesign and program a new version of the CIT Homework Submission system. This system is used by several instructors for homework submission from students. The new system allows for multiple files to be selected and uploaded at once, and also lets users know how close they are to the 75MB/upload limit.</p>
+
+          <p>For added security a student must be logged in to see their submissions which solved a previous security issue from the old system.</p>
+        </div>
+      </div>
+      <div id="d9">
+        <img src="images/portfolio/onventure.jpg" alt="Onventure.co">
+        <div>
+          <h3>Onventure.co</h3>
+
+          <p>Onventure.co is a website designed for Tech Entreprenuers. It has a series of interactive modules designed to help stimulate and track the ecommerce process. I built all modules using HTML, CSS, JavaScript, PHP, and MySQL.</p>
+
+          <p>The modules are used to help students in the WEB 3500 course at Dixie State University complete their assignments. They have been being used for the past 5 years.</p>
+        </div>
+      </div>
+      <div id="d10">
+        <img src="images/portfolio/pianotuner.jpg" alt="Piano Tuner">
+        <div>
+          <h3>Web Based Piano Tuner</h3>
+
+          <p>I created this web application as part of the 2014 Southern Utah Code Camp. The application was created using only HTML, CSS, and JavaScript. My application placed first in the industry division at Code Camp.</p>
+
+          <p>I built the application in about 8 hours of the 24 allotted for the competition, went home tested the application on my own piano and violin, and then got a good night's sleep while the competition continued working on their projects.</p>
+        </div>
+      </div>
+      <div id="d11">
+        <img src="images/portfolio/christmastreeprogrammer.jpg" alt="Christmas Tree Programmer">
+        <div>
+          <h3>Christmas Tree Programmer</h3>
+
+          <p>Part of a recent maker project, using a raspberry pi and 8 channel solid state relay board, I built a light controller designed to control a Christmas tree.</p>
+
+          <p>I built this web application to make it easy to program a light show by adding keyframes to the song's timeline to switch channels on/off. The system allows you to upload previously designed programs and make changes, export your program, and uses local storage so you can close your browser and come back later to continue your progress as well as ensure you don't lose your program by accident.</p>
+
+          <p>When this project is finished, the page will be posted to the public and users will be able to choose a song, program a light show, and submit their show to be played on trees located around the campus of Dixie State University.</p>
+        </div>
+      </div>
+      <div id="d12">
+        <img src="images/portfolio/wasatchsavings.jpg" alt="Wasatch Savings">
+        <div>
+          <h3>Wasatch Savings Checkout Form</h3>
+
+          <p>I was approached by the owner of Wasatch Savings to create a simple and easy-to-use form for purchasing their product. The form is very user friendly and has an interactive card that is filled out as the user types in their name, card number, expiration date, and even flips when the user types the security code on their card.</p>
+
+          <p>The system also allows for promotional codes, invoicing, and group codes for tracking different marketing campaigns and promotions.</p>
+        </div>
+      </div>
+    </div>
+    <a href="#" id="prev"><i class="fa fa-chevron-circle-left"></i></a>
+    <a href="#" id="next"><i class="fa fa-chevron-circle-right"></i></a>
+
+    <img src="images/resume.png" alt="resume" class="print">
+  </body>
+</html>
